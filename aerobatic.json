@@ -1,0 +1,9 @@
+{
+  "frameworks": [
+    "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"
+  ],
+  "pages" : {
+    "homePage": "controllers/homePageCtrl",
+    "artistDetail": "controllers/productPageCtrl"
+  }
+}
