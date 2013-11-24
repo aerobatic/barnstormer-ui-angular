@@ -1,9 +1,16 @@
 {
-  "frameworks": [
-    "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"
-  ],
-  "pages" : {
-    "homePage": "controllers/homePageCtrl",
-    "artistDetail": "controllers/productPageCtrl"
+  "requirejs": {
+    "shim": {
+      "angular": {
+        "exports": "angular"
+      }
+    },
+    "paths": {
+     "angular": ["//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"]
+    }
+  },
+  "pages": {
+    "homePage": "controllers/homePageCtrl.js",
+    "artistDetail": "controllers/artistDetailCtrl.js"
   }
 }
