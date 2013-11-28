@@ -1,8 +1,9 @@
 define(['angular'], function (angular) {
   'use strict';
 
-  return ['$scope', function ($scope) {
-    console.log("HomePageCtrl loaded");
+  return ['$scope', '$log', 'homePageData', function ($scope, $log, homePageData) {
+    $log.info("HomePageCtrl loaded");
+    $log.info(JSON.stringify(homePageData));
     $scope.name = "My Name is Angular!";
   }];
 });
