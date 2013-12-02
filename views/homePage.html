@@ -1,4 +1,10 @@
-<div ng-app="homePageApp">
+<div ng-app="homePageApp" ng-controller="HomePageCtrl">
   <h1>This is a view from Angular</h1>
   <h2>{{name}}</h2>
+
+  <ul>
+    <li ng-repeat="artist in pageData.hotArtists">
+      <a href="{{artist.href}}">{{artist.name}}</a>
+    </li>
+  </ul>
 </div>

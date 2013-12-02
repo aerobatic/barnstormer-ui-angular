@@ -5,5 +5,7 @@ define(['angular'], function (angular) {
     $log.info("HomePageCtrl loaded");
     $log.info(JSON.stringify(homePageData));
     $scope.name = "My Name is Angular!";
+
+    $scope.pageData = homePageData;
   }];
 });
