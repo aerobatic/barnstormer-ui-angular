@@ -3,12 +3,17 @@
     "angular": {
       "exports": "angular"
     },
+    "angularMocks": {
+      "deps":["angular"],
+      "exports":"angular.mock"
+    },
     "jquery": {
       "exports": "$"
     }
   },
   "paths": {
-   "angular": ["//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min"],
+   "angular": ["//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min"],
+   "angularMocks": ["//code.angularjs.org/1.2.3/angular-mocks"],
    "jquery": ["//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min"],
    "lodash": ["//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.0/lodash.min"]
   },
