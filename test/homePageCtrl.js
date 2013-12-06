@@ -26,9 +26,9 @@ define(['angular', 'angularMocks', 'asset!controllers/homePageCtrl'], function (
 	    //   $scope : scope
 	    // });
 
-	    expect(scope.pageData).not.to.be.null;
-	    expect(scope.pageData.hotArtists).not.to.be.null;
-	    expect(scope.pageData.hotArtists.length).to.eql(0);
+	    assert.isDefined(scope.pageData);
+	    assert.isDefined(scope.pageData.hotArtists);
+	    assert.equal(scope.pageData.hotArtists.length, 0);
 	  });
 	});
 });
