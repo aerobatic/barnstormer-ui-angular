@@ -16,7 +16,8 @@
    "angularMocks": ["//code.angularjs.org/1.2.3/angular-mocks"],
    "jquery": ["//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min"],
    "lodash": ["//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.0/lodash.min"],
-   "bootstrap": ["//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"]
+   "bootstrap": ["//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"],
+   "bootstrap-js": ["//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min"]
   },
   "mainModules": {
     "homePage": "homePageApp",

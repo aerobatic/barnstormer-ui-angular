@@ -12,7 +12,10 @@ require([
   // Load the template for the home page
   var assets = [
     "asset!views/homePage.html",
-    "css!//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    "asset!bootstrap",
+    "bootstrap-js",
+    "asset!libs/holder",
+    "asset!stylesheets/carousel.css"
   ];
 
   require(assets, function(view) {
