@@ -1,4 +1,7 @@
 {
+  "owner": "aerobatic",
+  "repo": "barnstormer-ui-angular",
+  "hangar": "github",
   "shim": {
     "angular": {
       "exports": "angular"
