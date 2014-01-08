@@ -1,4 +1,8 @@
 {
+  "host": "http://localhost:4000",
+  "owner": "aerobatic",
+  "repo": "barnstormer-ui-angular",
+  "hangar": "github",
   "shim": {
     "angular": {
       "exports": "angular"
