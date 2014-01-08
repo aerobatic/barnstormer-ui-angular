@@ -22,5 +22,13 @@
   "mainModules": {
     "homePage": "homePageApp",
     "artistDetail": "controllers/artistDetailCtrl"
+  },
+  "environments": {
+    "Development": {
+      "host": "http://localhost:4000"
+    },
+    "Production": {
+      "host": "http://www.barnstormermusic.biz"
+    }
   }
 }
