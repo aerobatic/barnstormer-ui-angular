@@ -11,7 +11,7 @@ require([
 
   // Load the template for the home page
   var assets = [
-    "asset!views/homePage.html",
+    "asset!views/homePage.jade",
     "asset!bootstrap",
     "bootstrap-js",
     "asset!libs/holder",
