@@ -11,11 +11,11 @@ require([
 
   // Load the template for the home page
   var assets = [
-    "asset!views/homePage.jade",
+    "asset!views/home.jade",
     "asset!bootstrap",
     "bootstrap-js",
     "asset!libs/holder",
-    "asset!stylesheets/carousel.css"
+    "asset!stylesheets/home.styl"
   ];
 
   require(assets, function(view) {
