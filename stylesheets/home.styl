@@ -1,13 +1,31 @@
+@font-face
+  font-family: 'Ceviche One'
+  font-style: normal
+  font-weight: 400
+  src: local('Ceviche One'), local('CevicheOne-Regular'), url('http://themes.googleusercontent.com/static/fonts/cevicheone/v4/BQRygZwg3wyGCQXvKfUbSbrIa-7acMAeDBVuclsi6Gc.woff') format('woff');
+
+@font-face
+  font-family: 'Exo 2'
+  font-style: normal
+  font-weight: 400
+  src: local('Exo 2'), local('Exo2-Regular'), url('http://themes.googleusercontent.com/static/fonts/exo2/v1/KzoFUeaQw_faskDsymvVJqCWcynf_cDxXwCLxiixG1c.woff') format('woff')
+
 body
   padding-bottom: 40px;
   color: #5a5a5a;
+  font-family: "Lucida Grande", "Times New Roman"
 
+a.navbar-brand 
+  font-family: 'Ceviche One', cursive
+  font-size: 54px
+  color: #FFF !important
+   
 .navbar-wrapper
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 20
 
 // Flip around the padding for proper display in narrow viewports 
 .navbar-wrapper .container
@@ -36,3 +54,30 @@ body
   
   .navbar-wrapper .navbar
     border-radius: 4px;
+
+
+a.thumbnail:hover
+  text-decoration: none 
+  border-color: #000
+
+  h3
+    text-decoration: none !important
+    color: #000 !important
+
+.artists
+  div.logo
+    p 
+      padding: 10px 5px
+
+  h3
+    font-family: 'Exo 2', cursive
+    font-size: 18px
+    color: #000 !important
+    text-decoration: none
+    margin-left: 5px
+    margin-top: 10px
+
+  h3:hover
+    text-decoration: none !important
+    color: #000 !important
+
