@@ -23,12 +23,12 @@ require([
 
     // Load the artists from the DOM
     var homePageData = {
-      hotArtists: _.map(body.find("ul[data-hot-artists] > li a"), function(el) {
+      hotArtists: _.map(body.find("ul[data-hot-artists] > li[data-artist]"), function(el) {
         el = $(el);
         return {
-          id: el.data("id"),
-          href: el.attr("href"),
-          name: el.text()
+          name: el.find("[data-artist-title]").text(),
+          href: el.find("[data-artist-link]").attr("href"),
+          image: el.find("[data-artist-image]").attr("src")
         }
       })
     };
