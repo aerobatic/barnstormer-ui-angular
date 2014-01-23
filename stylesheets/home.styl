@@ -1,3 +1,5 @@
+@import 'nib'
+
 body
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -36,3 +38,12 @@ body
   
   .navbar-wrapper .navbar
     border-radius: 4px;
+
+// Makes use of nib gradients to avoid having to manage all the vendor prefixes ourselves
+.btn-dark
+  background-color: hsl(0, 0%, 16%) !important
+  background-repeat: repeat-x
+  background: linear-gradient(top, #5b5b5b, #282828)
+  border-color: #282828 #282828 hsl(0, 0%, 11%)
+  color: #fff !important
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33)
