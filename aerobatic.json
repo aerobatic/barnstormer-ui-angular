@@ -27,11 +27,11 @@
     "artistDetail": "controllers/artistDetailCtrl"
   },
   "environments": {
-    "Development": {
-      "host": "http://localhost:4000/home"
-    },
     "Production": {
       "host": "http://www.barnstormermusic.biz/home"
+    },
+    "Development": {
+      "host": "http://localhost:4000/home"
     }
   }
 }
