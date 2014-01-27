@@ -1,23 +1,20 @@
 define(['angular', 'lodash'], function (angular) {
   'use strict';
 
-  return ['$scope', '$log', 'homePageData', function ($scope, $log, homePageData) {
+  return ['$scope', '$log', '$window', function ($scope, $log, $window) {
     $log.info("HomePageCtrl loaded");
-    // $log.info(JSON.stringify(homePageData));
-    
-    $scope.hotArtists = [[], [], [], []];
+
+    $scope.topArtists = [[], [], [], []];
 
     // Randomly order the hot artists
-    homePageData.hotArtists = _.shuffle(homePageData.hotArtists);
+    var topArtists = _.shuffle($window.__topArtists__);
 
     // Break the artists up into 3 columns
     // Put the first artist into the second column since the logo occupies the top slot in the first column
-    var column  = 1; 
-    _.each(homePageData.hotArtists, function(artist) {
-    	$scope.hotArtists[column].push(artist);
+    var column  = 1;
+    _.each(topArtists, function(artist) {
+    	$scope.topArtists[column].push(artist);
     	column = (column == 3) ? 0 : column + 1;
     });
-
-    // $scope.pageData = homePageData;
   }];
 });

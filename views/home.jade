@@ -10,31 +10,31 @@ div(ng-controller='HomePageCtrl')
               li.active Hello
 
   .container.artists
-    .row 
+    .row
       .col-md-3
         div.thumbnail.logo
           img.img-responsive(src="/barnstormer.jpg")
           p
             | <strong>Barnstormer Music</strong> is the official sample app of the Aerobatic UX delivery platform - wings for nimble web apps.
-          div 
+          div
             a.btn.btn-dark.btn-block.btn-lg(href="http://www.aerobaticapp.com") Learn More
 
-        div.artist(ng-repeat="artist in hotArtists[0]")
-          a.thumbnail(href="{{artist.href}}")
+        div.artist(ng-repeat="artist in topArtists[0]")
+          a.thumbnail(href="{{artist.url}}")
             img.img-responsive(ng-src="{{artist.image}}")
             h3 {{artist.name}}
       .col-md-3
-        div(ng-repeat="artist in hotArtists[1]")
-          a.thumbnail(href="{{artist.href}}")
+        div(ng-repeat="artist in topArtists[1]")
+          a.thumbnail(href="{{artist.url}}")
             img.img-responsive(ng-src="{{artist.image}}")
             h3 {{artist.name}}
       .col-md-3
-        div(ng-repeat="artist in hotArtists[2]")
-          a.thumbnail(href="{{artist.href}}")
+        div(ng-repeat="artist in topArtists[2]")
+          a.thumbnail(href="{{artist.url}}")
             img.img-responsive(ng-src="{{artist.image}}")
             h3 {{artist.name}}
       .col-md-3
-        div(ng-repeat="artist in hotArtists[3]")
-          a.thumbnail(href="{{artist.href}}")
+        div(ng-repeat="artist in topArtists[3]")
+          a.thumbnail(href="{{artist.url}}")
             img.img-responsive(ng-src="{{artist.image}}")
             h3 {{artist.name}}
