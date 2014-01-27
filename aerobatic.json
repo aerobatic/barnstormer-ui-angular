@@ -15,7 +15,7 @@
     }
   },
   "paths": {
-   "angular": ["//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min"],
+   "angular": ["//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min"],
    "angularMocks": ["//code.angularjs.org/1.2.3/angular-mocks"],
    "jquery": ["//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min"],
    "lodash": ["//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.0/lodash.min"],
@@ -24,14 +24,14 @@
   },
   "mainModules": {
     "homePage": "homePageApp",
-    "artistDetail": "controllers/artistDetailCtrl"
+    "artistDetail": "artistDetailApp"
   },
   "environments": {
-    "Development": {
-      "host": "http://localhost:4000/home"
-    },
     "Production": {
       "host": "http://www.barnstormermusic.biz/home"
+    },
+    "Development": {
+      "host": "http://localhost:4000/home"
     }
   }
 }
