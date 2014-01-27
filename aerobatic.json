@@ -24,7 +24,7 @@
   },
   "mainModules": {
     "homePage": "homePageApp",
-    "artistDetail": "controllers/artistDetailCtrl"
+    "artistDetail": "artistDetailApp"
   },
   "environments": {
     "Production": {

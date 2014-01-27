@@ -1,0 +1,29 @@
+div(ng-controller='ArtistDetailCtrl')
+  .navbar-wrapper
+    .container
+      .navbar.navbar-inverse.navbar-static-top(role='navigation')
+        .container
+          .navbar-header
+            a.navbar-brand(href='#') Barnstormer Music
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav
+
+  .container.main
+    .row
+      .col-md-9
+        h1 {{artist.name}}
+        .row
+          .col-md-5
+            img.img-responsive(ng-src="{{artist.image}}")
+          .col-md-7
+            p(ng-bind-html="artist.bio")
+      .col-md-3
+        h3 Similar Artists
+        ul
+          li(ng-repeat="similar in artist.similar")
+            a(href="{{similar.url}}")
+              img.img-responsive(ng-src="{{similar.image}}")
+              span {{similar.name}}
+
+
+    
