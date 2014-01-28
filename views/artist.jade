@@ -4,7 +4,7 @@ div(ng-controller='ArtistDetailCtrl')
       .navbar.navbar-inverse.navbar-static-top(role='navigation')
         .container
           .navbar-header
-            a.navbar-brand(href='#') Barnstormer Music
+            a.navbar-brand(href='/home') Barnstormer Music
           .navbar-collapse.collapse
             ul.nav.navbar-nav
 
@@ -14,16 +14,38 @@ div(ng-controller='ArtistDetailCtrl')
         h1 {{artist.name}}
         .row
           .col-md-5
-            img.img-responsive(ng-src="{{artist.image}}")
+            img.img-thumbnail.img-responsive(ng-src="{{artist.image}}")
           .col-md-7
             p(ng-bind-html="artist.bio")
+
+            h4 Tags
+            div.artist-tags
+              button.btn.btn-sm(ng-repeat="tag in artist.tags") {{tag}}
+        br
+        br
+        h2 Albums
+        .row
+          .col-md-4
+            div(ng-repeat="album in albums[0]")
+              div.thumbnail
+                img.img-responsive(ng-src="{{album.image}}")
+                h3 {{album.name}}
+          .col-md-4
+            div(ng-repeat="album in albums[1]")
+              div.thumbnail
+                img.img-responsive(ng-src="{{album.image}}")
+                h3 {{album.name}}
+          .col-md-4
+            div(ng-repeat="album in albums[2]")
+              div.thumbnail
+                img.img-responsive(ng-src="{{album.image}}")
+                h3 {{album.name}}
       .col-md-3
-        h3 Similar Artists
-        ul
-          li(ng-repeat="similar in artist.similar")
-            a(href="{{similar.url}}")
+        .well
+          h3 Similar Artists
+          div(ng-repeat="similar in artist.similar")
+            a.thumbnail(href="{{similar.url}}")
               img.img-responsive(ng-src="{{similar.image}}")
-              span {{similar.name}}
+              h3 {{similar.name}}
 
 
-    

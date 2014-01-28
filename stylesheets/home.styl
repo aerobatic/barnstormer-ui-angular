@@ -17,11 +17,32 @@ body
   color: #5a5a5a;
   font-family: "Lucida Grande", "Times New Roman"
 
-a.navbar-brand 
+h1, h2, h3, h4
+  font-family: 'Exo 2', cursive
+  font-size: 18px
+  color: #000 !important
+  text-decoration: none
+  margin-left: 5px
+  margin-top: 10px
+
+h1
+  font-size: 30px
+
+h2
+  font-size: 24px
+
+h4
+  font-size: 16px
+
+h1, h2, h3:hover
+  text-decoration: none !important
+  color: #000 !important
+
+a.navbar-brand
   font-family: 'Ceviche One', cursive
   font-size: 54px
   color: #FFF !important
-   
+
 .navbar-wrapper
   position: absolute
   top: 0
@@ -29,7 +50,7 @@ a.navbar-brand
   right: 0
   z-index: 20
 
-// Flip around the padding for proper display in narrow viewports 
+// Flip around the padding for proper display in narrow viewports
 .navbar-wrapper .container
   padding-left: 0;
   padding-right: 0;
@@ -45,15 +66,15 @@ a.navbar-brand
 @media (min-width: 768px)
   .navbar-wrapper
     margin-top: 20px;
-  
+
   .navbar-wrapper .container
     padding-left:  15px;
     padding-right: 15px;
-  
+
   .navbar-wrapper .navbar
     padding-left:  0;
     padding-right: 0;
-  
+
   .navbar-wrapper .navbar
     border-radius: 4px;
 
@@ -66,11 +87,11 @@ a.navbar-brand
   color: #fff !important
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33)
 
-.btn-dark:hover 
+.btn-dark:hover
   background: none
 
 a.thumbnail:hover
-  text-decoration: none 
+  text-decoration: none
   border-color: #000
 
   h3
@@ -79,17 +100,9 @@ a.thumbnail:hover
 
 .container.main
   div.logo
-    p 
+    p
       padding: 10px 5px
 
-  h1, h2, h3
-    font-family: 'Exo 2', cursive
-    font-size: 18px
-    color: #000 !important
-    text-decoration: none
-    margin-left: 5px
-    margin-top: 10px
+.artist-tags button
+  margin-right: 7px
 
-  h1, h2, h3:hover
-    text-decoration: none !important
-    color: #000 !important
