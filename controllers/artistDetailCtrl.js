@@ -6,6 +6,8 @@ define(['angular', 'lodash'], function (angular) {
 
     $scope.artist = $window.__artist__;
 
+    $scope.appRepo = $window.__config__.aerobaticAppOwner + "/" + $window.__config__.aerobaticAppRepo;
+
     $scope.artist.bio = $sce.trustAsHtml($scope.artist.bio);
 
     $scope.albums = [[], [], []];

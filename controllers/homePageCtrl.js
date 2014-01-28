@@ -4,6 +4,8 @@ define(['angular', 'lodash'], function (angular) {
   return ['$scope', '$log', '$window', function ($scope, $log, $window) {
     $log.info("HomePageCtrl loaded");
 
+    $scope.appRepo = $window.__config__.aerobaticAppOwner + "/" + $window.__config__.aerobaticAppRepo;
+
     $scope.topArtists = [[], [], [], []];
 
     // Randomly order the hot artists

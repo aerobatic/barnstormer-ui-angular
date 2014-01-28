@@ -6,7 +6,9 @@ div(ng-controller='HomePageCtrl')
           .navbar-header
             a.navbar-brand(href='#') Barnstormer Music
           .navbar-collapse.collapse
-            ul.nav.navbar-nav
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href="/") {{ appRepo }}
 
   .container.main
     .col-md-3
