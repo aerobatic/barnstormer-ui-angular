@@ -10,9 +10,9 @@ require([
   // Load the template for the home page
   var assets = [
     "asset!views/home",
-    "asset!bootstrap",
+    "css!bootstrap",
     "bootstrap-js",
-    "asset!stylesheets/home"
+    "css!stylesheets/home"
   ];
 
   require(assets, function(view) {

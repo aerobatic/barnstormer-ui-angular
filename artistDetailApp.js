@@ -12,9 +12,9 @@ require([
   // Load the template for the home page
   var assets = [
     "asset!views/artist",
-    "asset!bootstrap",
+    "css!bootstrap",
     "bootstrap-js",
-    "asset!stylesheets/home"
+    "css!stylesheets/home"
   ];
 
   require(assets, function(view) {
@@ -26,7 +26,7 @@ require([
 
     var artistDetailApp = angular.module('artistDetailApp', []);
     angular.module('artistDetailApp').controller('ArtistDetailCtrl', artistDetailCtrl);
-    
+
     angular.bootstrap(angularDocument, ['artistDetailApp']);
     return artistDetailApp;
   });
