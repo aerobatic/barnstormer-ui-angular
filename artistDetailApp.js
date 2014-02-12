@@ -2,7 +2,7 @@ require([
   'angular',
   'jquery',
   'lodash',
-  'asset!controllers/artistDetailCtrl.js'
+  'asset!controllers/artistDetailCtrl'
 ], function(angular, jquery, _, artistDetailCtrl) {
   'use strict';
   var $html = angular.element(document.getElementsByTagName('html')[0]);
@@ -11,10 +11,10 @@ require([
 
   // Load the template for the home page
   var assets = [
-    "asset!views/artist.jade",
+    "asset!views/artist",
     "asset!bootstrap",
     "bootstrap-js",
-    "asset!stylesheets/home.styl"
+    "asset!stylesheets/home"
   ];
 
   require(assets, function(view) {

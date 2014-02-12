@@ -2,17 +2,17 @@ require([
   'angular',
   'jquery',
   'lodash',
-  'asset!controllers/homePageCtrl.js'
+  'asset!controllers/homePageCtrl'
 ], function(angular, jquery, _, homePageCtrl) {
   'use strict';
   var $html = angular.element(document.getElementsByTagName('html')[0]);
 
   // Load the template for the home page
   var assets = [
-    "asset!views/home.jade",
+    "asset!views/home",
     "asset!bootstrap",
     "bootstrap-js",
-    "asset!stylesheets/home.styl"
+    "asset!stylesheets/home"
   ];
 
   require(assets, function(view) {
