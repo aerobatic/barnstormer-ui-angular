@@ -1,15 +1,6 @@
 div(ng-controller='ArtistDetailCtrl')
-  .navbar-wrapper
-    .container
-      .navbar.navbar-inverse.navbar-static-top(role='navigation')
-        .container
-          .navbar-header
-            a.navbar-brand(href='/home') Barnstormer Music
-          .navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href="/") {{ appRepo }}
-
+  include header
+  
   .container.main
     .row
       .col-md-9

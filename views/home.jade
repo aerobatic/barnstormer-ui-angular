@@ -1,15 +1,7 @@
+
 //- Home page
 div(ng-controller='HomePageCtrl')
-  .navbar-wrapper
-    .container
-      .navbar.navbar-inverse.navbar-static-top(role='navigation')
-        .container
-          .navbar-header
-            a.navbar-brand(href='#') Barnstormer Music
-          .navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href="/") {{ appRepo }}
+  include header
 
   .container.main
     .col-md-3
